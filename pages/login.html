@@ -1,0 +1,30 @@
+<div class="container-fluid bg-3 text-center register">    
+  <div class="row" >
+    <form class="form-horizontal" name="userorm" 
+      ng-submit="userorm.$valid && login(user)" novalidate>
+
+      <div class="form-group">
+        <label class="col-sm-5 control-label">Email </label>
+        <div class="col-sm-2">
+           <input type="text" class="form-control" id="email" placeholder="Digite o teu e-mail" ng-model="user.email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-5 control-label">Password</label>
+        <div class="col-sm-2">
+           <input type="password" class="form-control" id="password" placeholder="Digite o teu password" 
+            ng-model="user.password" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success"  aria-label="Left Align">Signin
+      </button>
+      <br /><br /> 
+
+      <div class="alert alert-danger  col-md-offset-4 col-sm-4" role="alert" ng-show="erro">
+        {{mensagem}} 
+      </div>
+    </form>
+    
+  </div>
+</div>

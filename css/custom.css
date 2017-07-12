@@ -1,0 +1,33 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .banner{
+        background-image: url(../images/Girls-Shopping.jpg);
+        background-size: cover;
+        background-position-y: -30px;
+        height: 560px;
+    }
+
+    div.register{
+        padding-top: 40px;
+    }
+
+    .ng-invalid.ng-dirty{
+        border-color: #FA787E;
+    }
+    .ng-valid.ng-dirty{
+        border-color: #78FA89;
+    }
+
+    .subtitle{
+        margin: 40px 0 10px 0;
+    }

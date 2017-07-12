@@ -1,0 +1,47 @@
+<div class="container-fluid bg-3 text-center register">
+  <div class="row">
+    <form class="form-horizontal" name="clienteForm" ng-submit="clienteForm.$valid && addCliente(cliente)"
+      novalidate>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Nome </label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="nome" placeholder="Nome" ng-model="cliente.nome" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Telefone/Telemóvel</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="telefone" placeholder="Telefone" ng-model="cliente.telefone"
+            required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" id="email" placeholder="Email" ng-model="cliente.email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-6">
+          <input type="password" class="form-control" id="password" placeholder="Password" ng-model="cliente.password"
+            required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success" aria-label="Left Align" >Enviar
+        <span class=" glyphicon glyphicon-send" aria-hidden="true"></span> 
+      </button>
+      <br /><br />
+
+      <div class="alert alert-success col-md-offset-4 col-sm-4 " role="alert" ng-show="sucesso">
+        {{mensagem}}
+      </div>
+      <div class="alert alert-danger  col-md-offset-4 col-sm-4" role="alert" ng-show="erro">
+        {{mensagem}}
+      </div>
+    </form>
+
+  </div>
+</div>
